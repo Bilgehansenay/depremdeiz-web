@@ -1,12 +1,11 @@
 import React from "react";
 
-
-function HelpRow(props) {
+function MyHelpRow(props) {
     return (
         <div className="help">
             <h1>{props.item.currentDate}</h1>
-            {props.item.helpList.map(item => {
-                return <h1>{JSON.stringify(item.demandName)}</h1>
+            {props.item.helpList.map((item, index) => {
+                return <h1 key={index}>{JSON.stringify(item.demandName)}</h1>
             })}
             <div>
                 {
@@ -18,4 +17,4 @@ function HelpRow(props) {
     );
 }
 
-export default HelpRow;
+export default MyHelpRow;
