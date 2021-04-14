@@ -9,6 +9,8 @@ function OtherHelp() {
 
     const { tcNumber } = useFirebaseDatabase()
     const [helpList, setHelpList] = useState([]);
+    const [helpKeys, setHelpKey] = useState([]);
+
 
     useEffect(() => {
         var myHelpRef = database.ref('Help');
@@ -18,7 +20,11 @@ function OtherHelp() {
 
                 Object.keys(childData).forEach(function (key) {
                     if (childData[key].tc_kimlikNo !== tcNumber) {
-                        console.log(childData[key]);
+                       // console.log(childData[key]);
+                        console.log(key);
+                        setHelpKey(prevKeys => {
+                            return [...prevKeys, key]
+                        });
                         setHelpList(prevHelps => {
                             return [...prevHelps, childData[key]]
                         });
@@ -36,6 +42,7 @@ function OtherHelp() {
             {helpList.map((helpItem, index) => {
                 return <OthersHelpRow
                     key={index}
+                    helpKey={helpKeys[index]}
                     item={helpItem} />
             })}
         </>
