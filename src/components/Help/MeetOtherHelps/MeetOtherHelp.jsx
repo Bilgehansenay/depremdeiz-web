@@ -34,11 +34,7 @@ function MeetOtherHelp(props) {
 
         location.helpItem.helpList.forEach(function (help) {
             const newHelp = help
-            console.log(help.isProvided)          
-            console.log("==========================");
             if (!help.isProvided){
-                console.log("----------------------");
-                console.log(newHelp.demandName);
                 newHelp.providedDate = getTimeStamp()
                 newHelp.providedPersonTcNumber = tcNumber
             }
@@ -56,7 +52,7 @@ function MeetOtherHelp(props) {
             helpList: newHelpList,
         });
 
-      //  alert("Profil başarıyla güncellendi");
+      //  alert("Yardımda bulunacağınız kişiye bilgilerinizi bildirim ile gönderdik. Sizinle irtibata geçmesi için bekleyiniz.");
     }
 
 
