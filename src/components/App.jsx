@@ -11,7 +11,7 @@ function App(){
         <FirebaseDatabaseProvider>
             <Router>
                 <Switch>
-                    <Route exact path="/" component={SignUp} />
+                    <Route exact path="/depremdeiz-web" component={SignUp} />
                     <Route path="/signup" component={SignUp} />
                     <Route path="/home" component={Home} />
                     <Route path="/tcnumber" component={TCNumber} />
