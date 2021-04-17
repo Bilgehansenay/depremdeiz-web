@@ -61,8 +61,8 @@ function MeetOtherHelp(props) {
             newHelpList.push(newHelp)
         }
 
-        var userToken = currentUser.user_token
-        if (location.helpItem.userToken == null) {
+        var userToken = location.helpItem.userToken
+        if (userToken == null) {
             userToken = ""
         }
 
