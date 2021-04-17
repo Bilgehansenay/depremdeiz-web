@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "https://bilgehansenay.github.io/depremdeiz-web/static/js/main.a01f0112.chunk.js",
-    "main.js.map": "https://bilgehansenay.github.io/depremdeiz-web/static/js/main.a01f0112.chunk.js.map",
+    "main.js": "https://bilgehansenay.github.io/depremdeiz-web/static/js/main.5ade8ce6.chunk.js",
+    "main.js.map": "https://bilgehansenay.github.io/depremdeiz-web/static/js/main.5ade8ce6.chunk.js.map",
     "runtime-main.js": "https://bilgehansenay.github.io/depremdeiz-web/static/js/runtime-main.09cdc44f.js",
     "runtime-main.js.map": "https://bilgehansenay.github.io/depremdeiz-web/static/js/runtime-main.09cdc44f.js.map",
     "static/css/2.4c97ca4f.chunk.css": "https://bilgehansenay.github.io/depremdeiz-web/static/css/2.4c97ca4f.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.09cdc44f.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.7d61f2e4.chunk.js",
-    "static/js/main.a01f0112.chunk.js"
+    "static/js/main.5ade8ce6.chunk.js"
   ]
 }
